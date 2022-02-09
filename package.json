@@ -1,0 +1,46 @@
+{
+	"name": "wrapped-tokens",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"compile": "npx hardhat clean; npx hardhat compile",
+		"accounts": "npx hardhat accounts",
+		"test": "npx hardhat test --network ganache",
+		"testGas": "REPORT_GAS=true npx hardhat test --network ganache",
+		"prettier": "prettier --write 'contracts/**/*.sol'",
+		"deploy:rinkeby": "NETWORK=rinkeby npx hardhat run --network rinkeby scripts/deploy.js",
+		"deploy_vesting:rinkeby": "NETWORK=rinkeby npx hardhat run --network rinkeby scripts/deploy_vesting.js",
+		"deploy:polygon": "NETWORK=polygon npx hardhat run --network polygon scripts/deploy.js",
+		"deploy:polygon_test": "NETWORK=polygon_test npx hardhat run --network polygon_test scripts/deploy.js",
+		"deploy:mainnet": "NETWORK=mainnet npx hardhat run --network mainnet scripts/deploy.js",
+		"deploy:arbitrum_test": "NETWORK=arbitrum_test npx hardhat run --network arbitrum_test scripts/deploy.js"
+	},
+	"author": "https://starnetnft.com",
+	"license": "MIT",
+	"dependencies": {
+		"@chainlink/contracts": "^0.2.2",
+		"@openzeppelin/contracts": "^4.2.0",
+		"@truffle/hdwallet-provider": "1.4.1",
+		"dotenv": "^10.0.0",
+		"ethereumjs-util": "^7.1.0",
+		"keccak256": "^1.0.3"
+	},
+	"devDependencies": {
+		"@nomiclabs/hardhat-ethers": "^2.0.2",
+		"@nomiclabs/hardhat-etherscan": "^2.1.4",
+		"@nomiclabs/hardhat-waffle": "^2.0.1",
+		"@nomiclabs/hardhat-web3": "^2.0.0",
+		"@openzeppelin/test-helpers": "^0.5.12",
+		"chai": "^4.3.4",
+		"csv-write-stream": "^2.0.0",
+		"dotenv": "^10.0.0",
+		"ethereum-waffle": "^3.4.0",
+		"ethers": "^5.4.7",
+		"hardhat": "^2.4.3",
+		"hardhat-gas-reporter": "^1.0.4",
+		"prettier": "^2.3.2",
+		"prettier-plugin-solidity": "^1.0.0-beta.16",
+		"web3": "^1.4.0"
+	}
+}

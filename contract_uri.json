@@ -1,0 +1,8 @@
+{
+	"name": "Goat Gang",
+	"description": "Approaching the goat from a symbolic point of view entails the discovering of an animal that presents maybe the most impressive number of interpretations. Those are reflections of art forms from antiquity.",
+	"image": "https://goatgang.io/wp-content/uploads/2021/08/GG_LOGO_350px.png",
+	"external_link": "http://goatgang.io/",
+	"seller_fee_basis_points": 100,
+	"fee_recipient": "0x415365B365d618aceA382Dd9A2eb5cDAd59f5Adc"
+}

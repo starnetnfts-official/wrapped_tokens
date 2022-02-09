@@ -1,0 +1,11 @@
+MAINNET_RPC=https://eth-mainnet.alchemyapi.io/v2/xxxxxx
+RINKEBY_RPC=https://eth-rinkeby.alchemyapi.io/v2/xxxxx-VDQQUzlY0k5mwA
+MATIC_RPC_TEST="https://polygon-mumbai.g.alchemy.com/v2/xxxx"
+MATIC_RPC="https://polygon-mainnet.g.alchemy.com/v2/xxxx-bWaJ1qd"
+BSC_RPC_TEST=https://data-seed-prebsc-1-s1.binance.org:8545
+BSC_RPC=https://bsc-dataseed1.binance.org
+PRIVATE_KEY="xxxx"
+POLYSCAN_KEY="xxx"
+ETHERSCAN_KEY="xxx"
+COINMARKETCAP_API="xxxx-565a-444a-8238-xxxx"
+BSC_SCAP_API_KEY="xxx"
