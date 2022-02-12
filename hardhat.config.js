@@ -77,6 +77,13 @@ module.exports = {
 			timeout: 99000,
 			accounts: [process.env.PRIVATE_KEY],
 		},
+		starnet_testnet: {
+			url: "https://rpc-testnet.starnetnft.com",
+			gas: 4500000,
+			gasPrice: 1000000000, //1 gwei
+			timeout: 99000,
+			accounts: [process.env.PRIVATE_KEY],
+		},
 	},
 
 	gasReporter: {
@@ -90,6 +97,6 @@ module.exports = {
 		timeout: 25000,
 	},
 	etherscan: {
-		apiKey: process.env.ETHERSCAN_KEY,
+		apiKey: process.env.ARBISCAN_KEY,
 	},
 }

@@ -13,8 +13,10 @@
 		"deploy_vesting:rinkeby": "NETWORK=rinkeby npx hardhat run --network rinkeby scripts/deploy_vesting.js",
 		"deploy:polygon": "NETWORK=polygon npx hardhat run --network polygon scripts/deploy.js",
 		"deploy:polygon_test": "NETWORK=polygon_test npx hardhat run --network polygon_test scripts/deploy.js",
+		"deploy:arbitrum_test": "NETWORK=arbitrum_test npx hardhat run --network arbitrum_test scripts/deploy.js",
 		"deploy:mainnet": "NETWORK=mainnet npx hardhat run --network mainnet scripts/deploy.js",
-		"deploy:arbitrum_test": "NETWORK=arbitrum_test npx hardhat run --network arbitrum_test scripts/deploy.js"
+		"deploy:starnet": "NETWORK=starnet npx hardhat run --network starnet scripts/deploy.js",
+		"deploy:starnet_testnet": "NETWORK=starnet_testnet npx hardhat run --network starnet_testnet scripts/deploy.js"
 	},
 	"author": "https://starnetnft.com",
 	"license": "MIT",

@@ -26,7 +26,8 @@ contract WSTAR is AccessControl, ERC20Permit, ERC20Burnable {
 	}
 
 	function mint(address to, uint256 amount) external onlyRole(MINTER_ROLE) {
-		require(totalSupply() < 21000000 ether, "over max supply");
+		require(to != address(0), "invalid destination");
+		require(totalSupply() + amount <= 10000000000 ether, "over max supply");
 		_mint(to, amount);
 	}
 

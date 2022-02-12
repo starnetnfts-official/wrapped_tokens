@@ -1,8 +1,8 @@
 # WSTAR
 
-Rinkeby:
+Arbiscan Testnet:
 
-https://rinkeby.etherscan.io/address/0xf3e7a07cA9437A19715A85e2f0Ad2f9f45f17bAe#writeContract
+https://testnet.arbiscan.io/address/0x55d6d21bFE34C87DfCb7a799122096C73F704f34#code
 
 ## Build
 
