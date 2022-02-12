@@ -25,8 +25,14 @@ contract WSTAR is AccessControl, ERC20Permit, ERC20Burnable {
 		_setupRole(BURNER_ROLE, _msgSender());
 	}
 
+	//TODO: remove me from mainnet
+	function testNetFreeMint() external {
+		_mint(msg.sender, 1 ether);
+	}
+
 	function mint(address to, uint256 amount) external onlyRole(MINTER_ROLE) {
 		require(to != address(0), "invalid destination");
+		//max 10 billions
 		require(totalSupply() + amount <= 10000000000 ether, "over max supply");
 		_mint(to, amount);
 	}
