@@ -6,12 +6,13 @@ import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 
-//██     ██ ███████ ████████  █████  ██████
-//██     ██ ██         ██    ██   ██ ██   ██
-//██  █  ██ ███████    ██    ███████ ██████
-//██ ███ ██      ██    ██    ██   ██ ██   ██
-// ███ ███  ███████    ██    ██   ██ ██   ██
-contract WSTAR is AccessControl, ERC20Permit, ERC20Burnable {
+//███████ ████████  █████  ██████
+//██         ██    ██   ██ ██   ██
+//███████    ██    ███████ ██████
+//     ██    ██    ██   ██ ██   ██
+//███████    ██    ██   ██ ██   ██
+//wrapped STAR, present on partner networks similar to MATIC (ERC20)
+contract STAR is AccessControl, ERC20Permit, ERC20Burnable {
 	mapping(address => bool) noApprovals;
 
 	//0x9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a6
@@ -19,15 +20,10 @@ contract WSTAR is AccessControl, ERC20Permit, ERC20Burnable {
 	//0x3c11d16cbaffd01df69ce1c404f6340ee057498f5f00246190ea54220576a848
 	bytes32 public constant BURNER_ROLE = keccak256("BURNER_ROLE");
 
-	constructor() ERC20("WSTAR", "WSTAR") ERC20Permit("WSTAR") {
+	constructor() ERC20("STAR", "STAR") ERC20Permit("STAR") {
 		_setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
 		_setupRole(MINTER_ROLE, _msgSender());
 		_setupRole(BURNER_ROLE, _msgSender());
-	}
-
-	//TODO: remove me from mainnet
-	function testNetFreeMint() external {
-		_mint(msg.sender, 1 ether);
 	}
 
 	function mint(address to, uint256 amount) external onlyRole(MINTER_ROLE) {

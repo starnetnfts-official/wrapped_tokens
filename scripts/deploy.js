@@ -29,8 +29,8 @@ async function main() {
 	)
 
 	// We get the contract to deploy
-	const TContract = await hre.ethers.getContractFactory("WSTAR")
-	console.log("Deploying WSTAR Contract...")
+	const TContract = await hre.ethers.getContractFactory("STAR")
+	console.log("Deploying STAR Contract...")
 	const deployed = await TContract.deploy()
 	let dep = await deployed.deployed()
 
