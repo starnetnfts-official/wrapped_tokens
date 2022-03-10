@@ -18,7 +18,7 @@ contract STAR is AccessControl, ERC20Permit {
 	bytes32 public constant BURNER_ROLE = keccak256("BURNER_ROLE");
 
 	constructor() ERC20("STAR", "STAR") ERC20Permit("STAR") {
-		_setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
+		_setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
 		_setupRole(MINTER_ROLE, _msgSender());
 		_setupRole(BURNER_ROLE, _msgSender());
 	}
