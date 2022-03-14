@@ -10,10 +10,10 @@ import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
 //███████    ██    ██   ██ ██   ██
 contract STAR is ERC20Permit {
 	constructor() ERC20("STAR", "STAR") ERC20Permit("STAR") {
-		init(); //this is run only once!
+		tokenDistribution(); //this is run only once!
 	}
 
-	function init() internal {
+	function tokenDistribution() internal {
 		_mint(0x379cbc117598Bc98007B1BcD5E8FFbD53C242c17, 25000000 ether);
 		_mint(0x8B929ffab25943be866161F19329880026E8dc45, 25000000 ether);
 		_mint(0xc97C48d7ABe9C203203Fc80568Af2DdEc9d1Bf31, 25000000 ether);

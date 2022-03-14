@@ -1,8 +1,7 @@
-# WSTAR
+# STAR
 
-Arbiscan Testnet:
-
-https://testnet.arbiscan.io/address/0x007d3561191d984bB6F8cAA95B9Eb73e6bc64792#code
+Ethereum Mainnet:
+https://etherscan.io/address/0x007d3561191d984bB6F8cAA95B9Eb73e6bc64792#code
 
 ## Build
 
