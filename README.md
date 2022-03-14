@@ -1,7 +1,7 @@
 # STAR
 
 Ethereum Mainnet:
-https://etherscan.io/address/0x007d3561191d984bB6F8cAA95B9Eb73e6bc64792#code
+https://etherscan.io/address/0xfDc1FAD90B50bB6c0C7da6Dfe0D93b00DCE44eDA#code
 
 ## Build
 
