@@ -21,28 +21,28 @@
 	"author": "https://starnetnft.com",
 	"license": "MIT",
 	"dependencies": {
-		"@chainlink/contracts": "^0.2.2",
-		"@openzeppelin/contracts": "^4.2.0",
-		"@truffle/hdwallet-provider": "1.4.1",
-		"dotenv": "^10.0.0",
-		"ethereumjs-util": "^7.1.0",
-		"keccak256": "^1.0.3"
+		"@chainlink/contracts": "^0.4.0",
+		"@openzeppelin/contracts": "^4.5.0",
+		"@truffle/hdwallet-provider": "2.0.4",
+		"dotenv": "^16.0.0",
+		"ethereumjs-util": "^7.1.4",
+		"keccak256": "^1.0.6"
 	},
 	"devDependencies": {
-		"@nomiclabs/hardhat-ethers": "^2.0.2",
-		"@nomiclabs/hardhat-etherscan": "^2.1.4",
-		"@nomiclabs/hardhat-waffle": "^2.0.1",
+		"@nomiclabs/hardhat-ethers": "^2.0.5",
+		"@nomiclabs/hardhat-etherscan": "^3.0.3",
+		"@nomiclabs/hardhat-waffle": "^2.0.3",
 		"@nomiclabs/hardhat-web3": "^2.0.0",
-		"@openzeppelin/test-helpers": "^0.5.12",
-		"chai": "^4.3.4",
+		"@openzeppelin/test-helpers": "^0.5.15",
+		"chai": "^4.3.6",
 		"csv-write-stream": "^2.0.0",
-		"dotenv": "^10.0.0",
+		"dotenv": "^16.0.0",
 		"ethereum-waffle": "^3.4.0",
-		"ethers": "^5.4.7",
-		"hardhat": "^2.4.3",
-		"hardhat-gas-reporter": "^1.0.4",
-		"prettier": "^2.3.2",
-		"prettier-plugin-solidity": "^1.0.0-beta.16",
-		"web3": "^1.4.0"
+		"ethers": "^5.6.0",
+		"hardhat": "^2.9.1",
+		"hardhat-gas-reporter": "^1.0.8",
+		"prettier": "^2.5.1",
+		"prettier-plugin-solidity": "^1.0.0-beta.19",
+		"web3": "^1.7.1"
 	}
 }

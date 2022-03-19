@@ -65,8 +65,6 @@ module.exports = {
 		arbitrum_test: {
 			url: process.env.ARBITRUM_TEST,
 			network_id: 421611,
-			gas: 2500000,
-			gasPrice: 30000000, //0.03 gwei
 			timeout: 25000,
 			accounts: [process.env.PRIVATE_KEY],
 		},
@@ -97,6 +95,6 @@ module.exports = {
 		timeout: 25000,
 	},
 	etherscan: {
-		apiKey: process.env.ETHERSCAN_KEY,
+		apiKey: process.env.ARBISCAN_KEY,
 	},
 }
