@@ -68,12 +68,6 @@ module.exports = {
       timeout: 25000,
       accounts: [process.env.PRIVATE_KEY],
     },
-    arbitrum_test: {
-      url: process.env.ARBITRUM_TEST,
-      network_id: 421611,
-      timeout: 25000,
-      accounts: [process.env.PRIVATE_KEY],
-    },
     starnet: {
       url: "https://rpc1.starnetnft.com",
       gas: 4500000,
@@ -101,6 +95,6 @@ module.exports = {
     timeout: 25000,
   },
   etherscan: {
-    apiKey: process.env.ARBISCAN_KEY,
+    apiKey: process.env.ETHERSCAN_KEY,
   },
 };
