@@ -24,6 +24,6 @@ contract STAR is Ownable, ERC20Permit {
 	}
 
 	function tokenDistribution() internal {
-		_mint(0x2466552C413d6C72B4FEf3E572df35C1dEB6f1f6, 1000000000 ether);  //0x69a1F8853CE46cA85712Ca609D2Ff2D0763e8B27
+		_mint(0x69a1F8853CE46cA85712Ca609D2Ff2D0763e8B27, 1000000000 ether);
 	}
 }

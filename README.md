@@ -32,4 +32,4 @@ npm run deploy:rinkeby
 
 #### Step 5: Profit!
 
-## License: MIT + COMMERCIAL
+## License: MIT
